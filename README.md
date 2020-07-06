@@ -1,1 +1,1 @@
-# licence-verification-v2
+# mycasa-3.0-template
