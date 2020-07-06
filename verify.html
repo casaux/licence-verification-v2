@@ -18,15 +18,29 @@
          $(document).ready(function() {
 
 
-           $("#file-upload").on('change', function() {
+           if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
-             location.href="verified-details.html";
-             /*
-              $("#qr").css("display","block");
-              $("#name").val("Furzer");
-              $("#arn").val("1234567");
-*/
+             $("#file-upload").on('change', function() {
+
+               location.href="verified-details.html";
+               /*
+                $("#qr").css("display","block");
+                $("#name").val("Furzer");
+                $("#arn").val("1234567");
+           */
+             });
+           // some code..
+          } else {
+
+
+            $("#file-upload").click('change', function() {
+               location.href="verified-details.html";
            });
+
+          }
+
+
+
 
          });
       </script>
